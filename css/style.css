@@ -1,7 +1,362 @@
-body{
-    background: #FFB21A
-}   
+/*Body*/
 
-span{
-    background: white;
+body {
+	background: white;
+	align-content: flex-end;
+ 
 }
+
+.logo{width: 50%;
+    height: auto;
+}
+
+.romeo1{
+        width: 400px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+.wallpaper{
+    width: 25%
+}
+
+.icon{
+    width: 25%
+}
+
+
+/*Sidebar*/
+
+.sidebar {
+	height: 100%;
+	width: 350px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #2E2E2E;
+	overflow-x: hidden;
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+/* The navigation menu links */
+
+.sidebar a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #FFB21A;
+	display: block;
+    font-family: abril fatface;
+}
+
+
+.sidebar a:hover {
+	color: #E3E3E3;
+    font-style: italic
+}
+
+.sidebar a:visited {
+    color: #CECECE;
+    
+}
+
+  .flexbox{
+ margin-left: 360px;
+    display:flex;
+    }
+
+   .row{
+      width: 50%;
+     }
+
+
+/* Style page content */
+
+.main {
+	margin-left: 350px;
+	/* Same as the width of the sidebar */
+	padding: 10px 13px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+
+  
+
+footer {
+	position: absolute;
+	left: 5%;
+	bottom: 3%;
+	width: 90%;
+	color: white;
+	text-align: left;
+}
+
+
+/* Headers */
+
+h1 {
+	color: #FFB21A;
+	font-size: 40pt;
+	font-family: abril fatface;
+	text-align: left;}
+
+h2 {
+	color: #CECECE;
+	font-size: 20pt;
+	font-family: abril fatface;
+}
+
+p {
+	color: #2E2E2E;
+	font-family: helvetica;
+	text-align: left;
+}
+
+
+/* Links */
+
+a {
+	color: grey;
+	font-size: 18pt;
+    font-family: abril fatface;
+    font-style:normal; 
+}
+
+a:visited {
+	color: #E3E3E3
+}
+ 
+a:hover {
+    color: #FFB21A
+    
+    
+}
+ 
+li a {
+	display: block;}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+	float: right;
+	width: 60%;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 900px;
+}
+
+/* The Close Button */
+.close {
+	color: #2E2E2E;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: #FFB21A;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 18px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Caption text */
+.caption-container {
+	text-align: center;
+	background-color: white;
+	padding: 2px 16px;
+	color: white;
+}
+.demo {
+	opacity: 0;
+}
+.inactive,
+.demo:hover {
+	opacity: 0;
+}
+img.hover-shadow {
+	transition: 0.3s;
+}
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/***contact box***/
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #FFB21A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #CECECE;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #2E2E2E;
+  padding: 20px;
+
+
+}
+
+label {
+    color: white;}
+
+/*---INDEX---*/
+
+/* Style page content */
+.index {
+	margin-left: 360px;
+	/* Same as the width of the sidebar */
+	
+	padding: 0px 13px;
+}
+
+div.index{display: flex;
+flex-direction:row}
+
+.index-1{padding: 2%;}
+
+.index-2{padding: 2%;}
+
+.explore{width: 100%;
+height: auto;}
+
+.wave{width: 100%;
+height: auto;}
+    
+
+ /*---ABOUT---*/
+
+
+
+.flexbox {
+	margin-left: 360px;
+	/* Same as the width of the sidebar */
+	
+	padding: 0px 13px;
+}
+
+div.row2{padding: 3%;}
+
+
+
+
+
+        @media screen and (max-width: 728px){  } 
+        
+        @media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}    
+    
+    
